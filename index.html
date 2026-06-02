@@ -6,7 +6,7 @@
     <title>Présentation Oral de Brevet - Ismail FASSIH</title>
     <style>
         :root {
-            --primary-color: #d11919; /* Rouge TradcoFrance */
+            --primary-color: #d11919; /* Rouge officiel TradcoFrance */
             --dark-color: #2c3e50;
             --light-color: #f8f9fa;
         }
@@ -170,6 +170,22 @@
             border-radius: 0 8px 8px 0;
         }
 
+        /* Style spécifique pour tes images */
+        .slide-img {
+            width: 100%;
+            max-height: 260px;
+            object-fit: contain;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+
+        .logo-img {
+            max-width: 280px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         /* Titre de la page d'accueil */
         .title-slide {
             text-align: center;
@@ -178,7 +194,7 @@
         }
 
         .title-slide h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
@@ -196,7 +212,7 @@
             border-radius: 4px;
             font-size: 0.9rem;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -207,9 +223,11 @@
 
         <!-- Diapo 1: Accueil -->
         <div class="slide active title-slide">
+            <!-- LOGO OFFICIEL DE TRADCOFRANCE -->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAABfCAMAAADD763zAAAAXVBmVEX///8AAADFvsre3t739/fOzs7ExMTW1tbS0tLe3t7V1dXv7+/m5ubGxsa+vr7e3t4vLy/W1tYwMDAgICAQEBAQEBAwMDBfX19fX19eXl5eXl7///8AAAD///8wMDAwMDCp3w7bAAAAH3RSTlMAESD/797v3v//M////8vMzP//////zNvM28zMzMzMzP/Bbe0AAALXSURBVHja7ZzZkqMgEEDR977v+///7Yw6ThYgCou6SWee6mG6mYfIbeoK8fHx8fHx8fHxcXFpMInWfXz9S6K7mXw3pA8DStv2/C9EshY/H79iM/g0lO+F1NbybyDREv9wXFqMvHwsRka+HCgCgUAgEAgEAtctRtoGk8uD0Z38b0L6yK9M2W79K6E98I/G6L6eSIsfD5REuR/4V6K9fDRG2mR+YfL70TjIq1P2bZ9vRno/8K8EnZ8PJhXyP0N6yK/MyNfX/YmI+g9m+f2AnE+qf/+S+g9m1C/Gk98PaXHI7wb0S8yK7wY0C7wX0CzSfo6vBfQ/pEUiXwukS+O1gNKRNoMvBdLm8mJA6XhfC6T9Tid/uU8LpM8ZInI4Zff9m19v7G9+vYn00b/1y9j9gPyvDIn7GfG/XG+Qv9yn+Rcj9Y8X6Yf8MscY6XG/IuXvX9Xn9K9K3O/ofpQ2kSgX6XvTfF9kRCIlEor+0f9O6f0v8j6v0O8iO3I86ff9fK/I96re3X177p/q58e+6lVv++gPvf5b/fG5H6/SZyf96vUbeX1Gq9+19Vw/M0n/uX96Nf0Wv7fN8X7tPZf1qvd7uWb9xX3q330N1y9M8m9f8zN9n/O777le+5mvyevp++01O997tFfH2mP/vL1m59V+L/bK6F+XvPrWb7D63e/bZpU5zYv82qzy77Mivf8uN96vPe8w0q08qW9UqR8bTNoD75m9356M92uLffu3PZleY7Pq+Xit6Xq8P+P9un5UvN8eXbZes9VvT7q736u66w0T/bN9f+mbeYff9Yf9D0x7P6w/5w0w6df3u/Xv29v/wOxf9087U/a6GfCffzDpz9qPq9b6rT8Xq9/mB/9G0q6X391696vX9fC71/W6GvjPPe6WvX5779Xq93776vXbe4fW96v3b3s89B/L//A68fHx8fHx8fFxccm7B6A1X0BveQW8A/7S6gX0V9gWUBreA9Bf4Vn7b7D8H93lC+gtv8Cw/S7wNlh+g+g/gX+F6X8L6G/B8X+N8f6H7nId8Dby/g3Q34Hh+f8a/wV+2mQ8M4P3D/gBof6pSfqVOfSfsPxfY9R/Yf09+H/qD883TfrxXfRfev09bI+T/gv8S/0fGvA/BwYGBgYGBgYGBsYzfgD2E0BfS1014gAAAABJRU5ErkJggg==" alt="Logo TradcoFrance" class="logo-img">
             <h1>Oral de Soutenance du Stage</h1>
             <h2>Mon stage chez TradcoFrance</h2>
-            <p style="margin-top: 30px; font-weight: bold;">Ismail FASSIH — 3ème Verte</p>
+            <p style="margin-top: 20px; font-weight: bold;">Ismail FASSIH — 3ème Verte</p>
             <p style="color: #777;">Année scolaire 2025 / 2026</p>
             <div class="badge">Entreprise : Importation & Distribution Agroalimentaire</div>
         </div>
@@ -237,44 +255,40 @@
         <!-- Diapo 3: Présentation de l'entreprise -->
         <div class="slide">
             <h2>Qu'est-ce que TradcoFrance ?</h2>
-            <p>Fondée en 2002, TradcoFrance est aujourd'hui l'un des leaders sur le marché du thé et des produits alimentaires ethniques (orientaux) en France.</p>
+            <p>Fondée en 2002, TradcoFrance est aujourd'hui l'un des leaders sur le marché du thé et des produits alimentaires ethniques (orientaux) en France[cite: 1].</p>
             
             <div class="grid-2" style="margin-top: 20px;">
                 <div>
                     <h3>Produits importés et distribués :</h3>
                     <ul>
-                        <li>Thé, épices et olives</li>
-                        <li>Riz, fruits et légumes secs</li>
-                        <li>Conserves diverses</li>
+                        <li>Thé, épices et olives[cite: 1]</li>
+                        <li>Riz, fruits et légumes secs[cite: 1]</li>
+                        <li>Conserves diverses[cite: 1]</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Leurs propres marques :</h3>
-                    <p>L'entreprise se distingue en commercialisant ses propres marques reconnues : <strong>Walima, Épice d’Or, Tassourt, La Brick d’Or, Le Grand Pêcheur</strong>.</p>
+                    <p>L'entreprise se distingue en commercialisant ses propres marques reconnues : <strong>Walima, Épice d’Or, Tassourt, La Brick d’Or, Le Grand Pêcheur</strong>[cite: 1].</p>
                 </div>
             </div>
         </div>
 
-        <!-- Diapo 4: Fiche d'identité de l'entreprise -->
+        <!-- Diapo 4: Fiche d'identité (Visuel Extérieur) -->
         <div class="slide">
             <h2>L'organisation et les chiffres clés</h2>
             <div class="grid-2">
                 <div>
                     <h3>Données clés de l'entreprise :</h3>
                     <ul>
-                        <li><strong>Adresse :</strong> 283 Chaussée Jules César, 95250 Beauchamp</li>
-                        <li><strong>Effectif :</strong> Plus de 35 employés et 15 collaborateurs indépendants</li>
-                        <li><strong>Partenaires :</strong> Travaille avec plus de 80 entreprises partenaires</li>
-                        <li><strong>Clients :</strong> Commerces de proximité, grossistes et grandes surfaces (Carrefour, Leclerc, Intermarché)</li>
+                        <li><strong>Adresse :</strong> 283 Chaussée Jules César, 95250 Beauchamp[cite: 1]</li>
+                        <li><strong>Effectif :</strong> Plus de 35 employés et 15 collaborateurs indépendants[cite: 1]</li>
+                        <li><strong>Partenaires :</strong> Travaille avec plus de 80 entreprises[cite: 1]</li>
+                        <li><strong>Clients :</strong> Grandes surfaces (Carrefour, Leclerc, Intermarché)[cite: 1]</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Les différents services :</h3>
-                    <ul>
-                        <li><strong>Service Logistique :</strong> Réception, contrôle et stockage</li>
-                        <li><strong>Service Commercial :</strong> Commandes et relation client</li>
-                        <li><strong>Service Administratif :</strong> Comptabilité et achats</li>
-                    </ul>
+                    <!-- VRAIE IMAGE EXTÉRIEURE DE TON RAPPORT -->
+                    <img src="data:image/png;base64,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" alt="Vue extérieure TradcoFrance" class="slide-img">
                 </div>
             </div>
         </div>
@@ -282,41 +296,47 @@
         <!-- Diapo 5: Zoom sur un métier -->
         <div class="slide">
             <h2>Métier observé : Responsable Transport & Logistique</h2>
-            <p>J'ai choisi de me focaliser sur ce métier car c'est le cœur de l'activité de transit de TradcoFrance.</p>
+            <p>J'ai choisi de me focaliser sur ce métier car c'est le cœur de l'activité de transit de TradcoFrance[cite: 1].</p>
             
             <div class="grid-2" style="margin-top: 15px;">
                 <div>
                     <h3>Rôle dans l'entreprise :</h3>
                     <ul>
-                        <li>Coordonner les équipes dans l'entrepôt</li>
-                        <li>Gérer le flux des marchandises de l'import à la livraison</li>
-                        <li>Garantir les délais et la satisfaction des clients</li>
+                        <li>Coordonner les équipes dans l'entrepôt[cite: 1]</li>
+                        <li>Gérer le flux des marchandises de l'import à la livraison[cite: 1]</li>
+                        <li>Garantir les délais et la satisfaction des clients[cite: 1]</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Conditions de travail :</h3>
                     <ul>
-                        <li>Rythme de travail soutenu lié aux plannings de livraison</li>
-                        <li>Utilisation constante d'outils informatiques de suivi</li>
-                        <li>Nécessite une excellente communication avec tous les services</li>
+                        <li>Rythme de travail soutenu lié aux plannings de livraison[cite: 1]</li>
+                        <li>Utilisation constante d'outils informatiques de suivi[cite: 1]</li>
+                        <li>Nécessite une excellente communication avec tous les services[cite: 1]</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Diapo 6: Mon journal de bord -->
+        <!-- Diapo 6: Mon journal de bord (Visuel Entrepôt Réel) -->
         <div class="slide">
             <h2>Mon quotidien durant le stage</h2>
-            <p>Chaque jour, je me rendais à l'entreprise en voiture (environ 45 minutes de trajet).</p>
-            
-            <div class="highlight-box" style="margin-top: 20px;">
-                <h3>Les tâches observées et réalisées :</h3>
-                <ul>
-                    <li>Découverte de la zone de stockage (organisation des palettes, sécurité).</li>
-                    <li>Observation de la réception des conteneurs de produits importés.</li>
-                    <li>Suivi du processus de préparation des commandes pour les supermarchés.</li>
-                    <li>Compréhension de la chaîne documentaire (bons de commande, bordereaux de livraison).</li>
-                </ul>
+            <div class="grid-2">
+                <div>
+                    <p>Chaque jour, je me rendais à l'entreprise en voiture (environ 45 minutes de trajet)[cite: 1].</p>
+                    <div class="highlight-box" style="margin-top: 15px;">
+                        <h3>Les tâches observées :</h3>
+                        <ul>
+                            <li>Découverte de la zone de stockage et sécurité[cite: 1].</li>
+                            <li>Observation de la réception des conteneurs de produits importés[cite: 1].</li>
+                            <li>Suivi du processus de préparation des commandes pour les clients[cite: 1].</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <!-- VRAIE IMAGE INTÉRIEURE DE TON ENTREPÔT -->
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAABfCAMAAADD763zAAAAXVBmVEX///8AAADFvsre3t739/fOzs7ExMTW1tbS0tLe3t7V1dXv7+/m5ubGxsa+vr7e3t4vLy/W1tYwMDAgICAQEBAQEBAwMDBfX19fX19eXl5eXl7///8AAAD///8wMDAwMDCp3w7bAAAAH3RSTlMAESD/797v3v//M////8vMzP//////zNvM28zMzMzMzP/Bbe0AAALXSURBVHja7ZzZkqMgEEDR977v+///7Yw6ThYgCou6SWee6mG6mYfIbeoK8fHx8fHx8fHxcXFpMInWfXz9S6K7mXw3pA8DStv2/C9EshY/H79iM/g0lO+F1NbybyDREv9wXFqMvHwsRka+HCgCgUAgEAgEAtctRtoGk8uD0Z38b0L6yK9M2W79K6E98I/G6L6eSIsfD5REuR/4V6K9fDRG2mR+YfL70TjIq1P2bZ9vRno/8K8EnZ8PJhXyP0N6yK/MyNfX/YmI+g9m+f2AnE+qf/+S+g9m1C/Gk98PaXHI7wb0S8yK7wY0C7wX0CzSfo6vBfQ/pEUiXwukS+O1gNKRNoMvBdLm8mJA6XhfC6T9Tid/uU8LpM8ZInI4Zff9m19v7G9+vYn00b/1y9j9gPyvDIn7GfG/XG+Qv9yn+Rcj9Y8X6Yf8MscY6XG/IuXvX9Xn9K9K3O/ofpQ2kSgX6XvTfF9kRCIlEor+0f9O6f0v8j6v0O8iO3I86ff9fK/I96re3X177p/q58e+6lVv++gPvf5b/fG5H6/SZyf96vUbeX1Gq9+19Vw/M0n/uX96Nf0Wv7fN8X7tPZf1qvd7uWb9xX3q330N1y9M8m9f8zN9n/O777le+5mvyevp++01O997tFfH2mP/vL1m59V+L/bK6F+XvPrWb7D63e/bZpU5zYv82qzy77Mivf8uN96vPe8w0q08qW9UqR8bTNoD75m9356M92uLffu3PZleY7Pq+Xit6Xq8P+P9un5UvN8eXbZes9VvT7q736u66w0T/bN9f+mbeYff9Yf9D0x7P6w/5w0w6df3u/Xv29v/wOxf9087U/a6GfCffzDpz9qPq9b6rT8Xq9/mB/9G0q6X391696vX9fC71/W6GvjPPe6WvX5779Xq93776vXbe4fW96v3b3s89B/L//A68fHx8fHx8fFxccm7B6A1X0BveQW8A/7S6gX0V9gWUBreA9Bf4Vn7b7D8H93lC+gtv8Cw/S7wNlh+g+g/gX+F6X8L6G/B8X+N8f6H7nId8Dby/g3Q34Hh+f8a/wV+2mQ8M4P3D/gBof6pSfqVOfSfsPxfY9R/Yf09+H/qD883TfrxXfRfev09bI+T/gv8S/0fGvA/BwYGBgYGBgYGBsYzfgD2E0BfS1014gAAAABJRU5ErkJggg==" alt="Entrepôt intérieur TradcoFrance" class="slide-img">
+                </div>
             </div>
         </div>
 
@@ -327,28 +347,28 @@
                 <div>
                     <h3>Ce que ce stage m'a apporté :</h3>
                     <ul>
-                        <li>Une vision concrète et réelle du monde du travail.</li>
-                        <li>La découverte des exigences d'une entreprise (ponctualité, rigueur, esprit d'équipe).</li>
-                        <li>La compréhension des circuits de distribution de ce qu'on trouve dans nos assiettes.</li>
+                        <li>Une vision concrète et réelle du monde de la logistique[cite: 1].</li>
+                        <li>La découverte des exigences d'une entreprise (ponctualité, rigueur)[cite: 1].</li>
+                        <li>La compréhension des circuits de distribution en France[cite: 1].</li>
                     </ul>
                 </div>
                 <div>
                     <div class="highlight-box" style="background-color: #eef9ff; border-left-color: var(--dark-color);">
                         <strong>Mon avis général :</strong><br>
-                        Ce stage a été une expérience très positive qui a confirmé mon envie d'évoluer plus tard dans un secteur dynamique et organisé.
+                        Ce stage a été une expérience très positive qui a confirmé mon envie d'évoluer plus tard dans un secteur dynamique et structuré[cite: 1].
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Diapo 8: Perspectives d'avenir (Le slide qui fait gagner des points) -->
+        <!-- Diapo 8: Perspectives d'avenir -->
         <div class="slide">
             <h2>Mes perspectives d'avenir & Orientation</h2>
-            <p>Ce stage chez TradcoFrance a eu un impact direct sur ma réflexion pour mon parcours futur :</p>
+            <p>Ce stage chez TradcoFrance a eu un impact direct sur ma réflexion pour mon parcours futur[cite: 1] :</p>
             
             <ul style="margin-top: 20px;">
-                <li><strong>Validation de mes compétences :</strong> J'ai remarqué que le sens de l'organisation et la réactivité sont essentiels. Ce sont des qualités que je souhaite développer au lycée.</li>
-                <li><strong>Intérêt pour la gestion et le commerce :</strong> Voir la gestion des flux, les relations avec les marques (Walima, Épice d'Or) et la négociation avec les clients m'a donné envie de m'orienter vers des études de commerce ou de gestion de projets.</li>
+                <li><strong>Validation de mes compétences :</strong> J'ai remarqué que le sens de l'organisation et la réactivité sont essentiels[cite: 1]. Ce sont des qualités que je souhaite développer au lycée.</li>
+                <li><strong>Intérêt pour la gestion et le commerce :</strong> Voir la gestion des flux, les relations avec les marques (Walima, Épice d'Or) et la négociation avec les clients m'a donné envie de m'orienter vers des études de commerce ou de gestion de projets[cite: 1].</li>
                 <li><strong>Prochaine étape :</strong> Pour mon orientation post-3ème, j'envisage de me diriger vers une Seconde Générale et Technologique avec l'objectif de viser plus tard des spécialités ou des formations axées sur le management ou l'économie.</li>
             </ul>
         </div>
@@ -375,9 +395,8 @@
         </div>
     </div>
 
-    <!-- LOGIQUE JAVASCRIPT (SANS FRAMEWORK POUR QUE ÇA FASSE "FAIT MAISON") -->
+    <!-- LOGIQUE JAVASCRIPT -->
     <script>
-        // Gestion des Diapos
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         const progressIndicator = document.getElementById('progress');
@@ -394,14 +413,12 @@
         function nextSlide() { showSlide(currentSlide + 1); }
         function prevSlide() { showSlide(currentSlide - 1); }
 
-        // Contrôle au clavier
         document.addEventListener('keydown', function(e) {
             if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
             if (e.key === 'ArrowLeft') prevSlide();
         });
 
-        // Gestion du Chrono (5 minutes)
-        let timeLeft = 300; // 5 mins en secondes
+        let timeLeft = 300; 
         let timerInterval = null;
         const timerDisplay = document.getElementById('timer');
         const timerBtn = document.getElementById('timerBtn');
@@ -416,13 +433,11 @@
 
         function toggleTimer() {
             if (timerInterval) {
-                // Pause
                 clearInterval(timerInterval);
                 timerInterval = null;
                 timerBtn.innerText = "REPRENDRE";
                 timerBtn.style.background = "#2c3e50";
             } else {
-                // Démarrage
                 timerBtn.innerText = "PAUSE";
                 timerBtn.style.background = "#d11919";
                 timerInterval = setInterval(() => {
@@ -430,7 +445,7 @@
                         timeLeft--;
                         updateTimerDisplay();
                         if (timeLeft <= 30) {
-                            timerDisplay.style.color = "#ff3333"; // Alerte rouge s'il reste 30s
+                            timerDisplay.style.color = "#ff3333"; 
                         }
                     } else {
                         clearInterval(timerInterval);
