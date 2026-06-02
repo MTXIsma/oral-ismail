@@ -6,7 +6,7 @@
     <title>Présentation Oral de Brevet - Ismail FASSIH</title>
     <style>
         :root {
-            --primary-color: #d11919; /* Rouge officiel TradcoFrance */
+            --primary-color: #d11919; 
             --dark-color: #2c3e50;
             --light-color: #f8f9fa;
         }
@@ -26,7 +26,6 @@
             overflow: hidden;
         }
 
-        /* Zone de présentation principale */
         .presentation-container {
             flex: 1;
             position: relative;
@@ -52,7 +51,6 @@
             display: flex;
         }
 
-        /* Barre latérale Chrono et Navigation */
         .sidebar {
             width: 280px;
             background: #222;
@@ -64,7 +62,6 @@
             color: white;
         }
 
-        /* Style du Chrono */
         .timer-box {
             background: #2c2c2c;
             padding: 20px;
@@ -97,7 +94,6 @@
             background: #b01515;
         }
 
-        /* Boutons de navigation */
         .nav-buttons {
             display: flex;
             gap: 10px;
@@ -125,7 +121,6 @@
             color: #aaa;
         }
 
-        /* Styles du contenu des Diapos */
         h2 {
             color: var(--primary-color);
             font-size: 2.2rem;
@@ -170,14 +165,13 @@
             border-radius: 0 8px 8px 0;
         }
 
-        /* Style spécifique pour tes images */
         .slide-img {
             width: 100%;
-            max-height: 260px;
+            max-height: 280px;
             object-fit: contain;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fcfcfc;
         }
 
         .logo-img {
@@ -186,7 +180,6 @@
             margin-bottom: 20px;
         }
 
-        /* Titre de la page d'accueil */
         .title-slide {
             text-align: center;
             justify-content: center;
@@ -218,13 +211,12 @@
 </head>
 <body>
 
-    <!-- ZONE DES DIAPOSITIVES -->
     <div class="presentation-container">
 
         <!-- Diapo 1: Accueil -->
         <div class="slide active title-slide">
-            <!-- LOGO OFFICIEL DE TRADCOFRANCE -->
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAABfCAMAAADD763zAAAAXVBmVEX///8AAADFvsre3t739/fOzs7ExMTW1tbS0tLe3t7V1dXv7+/m5ubGxsa+vr7e3t4vLy/W1tYwMDAgICAQEBAQEBAwMDBfX19fX19eXl5eXl7///8AAAD///8wMDAwMDCp3w7bAAAAH3RSTlMAESD/797v3v//M////8vMzP//////zNvM28zMzMzMzP/Bbe0AAALXSURBVHja7ZzZkqMgEEDR977v+///7Yw6ThYgCou6SWee6mG6mYfIbeoK8fHx8fHx8fHxcXFpMInWfXz9S6K7mXw3pA8DStv2/C9EshY/H79iM/g0lO+F1NbybyDREv9wXFqMvHwsRka+HCgCgUAgEAgEAtctRtoGk8uD0Z38b0L6yK9M2W79K6E98I/G6L6eSIsfD5REuR/4V6K9fDRG2mR+YfL70TjIq1P2bZ9vRno/8K8EnZ8PJhXyP0N6yK/MyNfX/YmI+g9m+f2AnE+qf/+S+g9m1C/Gk98PaXHI7wb0S8yK7wY0C7wX0CzSfo6vBfQ/pEUiXwukS+O1gNKRNoMvBdLm8mJA6XhfC6T9Tid/uU8LpM8ZInI4Zff9m19v7G9+vYn00b/1y9j9gPyvDIn7GfG/XG+Qv9yn+Rcj9Y8X6Yf8MscY6XG/IuXvX9Xn9K9K3O/ofpQ2kSgX6XvTfF9kRCIlEor+0f9O6f0v8j6v0O8iO3I86ff9fK/I96re3X177p/q58e+6lVv++gPvf5b/fG5H6/SZyf96vUbeX1Gq9+19Vw/M0n/uX96Nf0Wv7fN8X7tPZf1qvd7uWb9xX3q330N1y9M8m9f8zN9n/O777le+5mvyevp++01O997tFfH2mP/vL1m59V+L/bK6F+XvPrWb7D63e/bZpU5zYv82qzy77Mivf8uN96vPe8w0q08qW9UqR8bTNoD75m9356M92uLffu3PZleY7Pq+Xit6Xq8P+P9un5UvN8eXbZes9VvT7q736u66w0T/bN9f+mbeYff9Yf9D0x7P6w/5w0w6df3u/Xv29v/wOxf9087U/a6GfCffzDpz9qPq9b6rT8Xq9/mB/9G0q6X391696vX9fC71/W6GvjPPe6WvX5779Xq93776vXbe4fW96v3b3s89B/L//A68fHx8fHx8fFxccm7B6A1X0BveQW8A/7S6gX0V9gWUBreA9Bf4Vn7b7D8H93lC+gtv8Cw/S7wNlh+g+g/gX+F6X8L6G/B8X+N8f6H7nId8Dby/g3Q34Hh+f8a/wV+2mQ8M4P3D/gBof6pSfqVOfSfsPxfY9R/Yf09+H/qD883TfrxXfRfev09bI+T/gv8S/0fGvA/BwYGBgYGBgYGBsYzfgD2E0BfS1014gAAAABJRU5ErkJggg==" alt="Logo TradcoFrance" class="logo-img">
+            <!-- TON VRAI LOGO EXTRAIT -->
+            <img src="https://i.ibb.co/M5gpLK6Q/logo.png" alt="Logo TradcoFrance" class="logo-img">
             <h1>Oral de Soutenance du Stage</h1>
             <h2>Mon stage chez TradcoFrance</h2>
             <p style="margin-top: 20px; font-weight: bold;">Ismail FASSIH — 3ème Verte</p>
@@ -273,7 +265,7 @@
             </div>
         </div>
 
-        <!-- Diapo 4: Fiche d'identité (Visuel Extérieur) -->
+        <!-- Diapo 4: Fiche d'identité (Bâtiment Extérieur) -->
         <div class="slide">
             <h2>L'organisation et les chiffres clés</h2>
             <div class="grid-2">
@@ -287,8 +279,8 @@
                     </ul>
                 </div>
                 <div>
-                    <!-- VRAIE IMAGE EXTÉRIEURE DE TON RAPPORT -->
-                    <img src="data:image/png;base64,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" alt="Vue extérieure TradcoFrance" class="slide-img">
+                    <!-- TA VRAIE PHOTO DU BÂTIMENT EXTÉRIEUR -->
+                    <img src="https://i.ibb.co/k6g5MPkB/entrepot-exterieur.png" alt="Vue extérieure TradcoFrance" class="slide-img">
                 </div>
             </div>
         </div>
@@ -312,13 +304,12 @@
                     <ul>
                         <li>Rythme de travail soutenu lié aux plannings de livraison[cite: 1]</li>
                         <li>Utilisation constante d'outils informatiques de suivi[cite: 1]</li>
-                        <li>Nécessite une excellente communication avec tous les services[cite: 1]</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Diapo 6: Mon journal de bord (Visuel Entrepôt Réel) -->
+        <!-- Diapo 6: Mon journal de bord (Racks Entrepôt) -->
         <div class="slide">
             <h2>Mon quotidien durant le stage</h2>
             <div class="grid-2">
@@ -334,8 +325,8 @@
                     </div>
                 </div>
                 <div>
-                    <!-- VRAIE IMAGE INTÉRIEURE DE TON ENTREPÔT -->
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAABfCAMAAADD763zAAAAXVBmVEX///8AAADFvsre3t739/fOzs7ExMTW1tbS0tLe3t7V1dXv7+/m5ubGxsa+vr7e3t4vLy/W1tYwMDAgICAQEBAQEBAwMDBfX19fX19eXl5eXl7///8AAAD///8wMDAwMDCp3w7bAAAAH3RSTlMAESD/797v3v//M////8vMzP//////zNvM28zMzMzMzP/Bbe0AAALXSURBVHja7ZzZkqMgEEDR977v+///7Yw6ThYgCou6SWee6mG6mYfIbeoK8fHx8fHx8fHxcXFpMInWfXz9S6K7mXw3pA8DStv2/C9EshY/H79iM/g0lO+F1NbybyDREv9wXFqMvHwsRka+HCgCgUAgEAgEAtctRtoGk8uD0Z38b0L6yK9M2W79K6E98I/G6L6eSIsfD5REuR/4V6K9fDRG2mR+YfL70TjIq1P2bZ9vRno/8K8EnZ8PJhXyP0N6yK/MyNfX/YmI+g9m+f2AnE+qf/+S+g9m1C/Gk98PaXHI7wb0S8yK7wY0C7wX0CzSfo6vBfQ/pEUiXwukS+O1gNKRNoMvBdLm8mJA6XhfC6T9Tid/uU8LpM8ZInI4Zff9m19v7G9+vYn00b/1y9j9gPyvDIn7GfG/XG+Qv9yn+Rcj9Y8X6Yf8MscY6XG/IuXvX9Xn9K9K3O/ofpQ2kSgX6XvTfF9kRCIlEor+0f9O6f0v8j6v0O8iO3I86ff9fK/I96re3X177p/q58e+6lVv++gPvf5b/fG5H6/SZyf96vUbeX1Gq9+19Vw/M0n/uX96Nf0Wv7fN8X7tPZf1qvd7uWb9xX3q330N1y9M8m9f8zN9n/O777le+5mvyevp++01O997tFfH2mP/vL1m59V+L/bK6F+XvPrWb7D63e/bZpU5zYv82qzy77Mivf8uN96vPe8w0q08qW9UqR8bTNoD75m9356M92uLffu3PZleY7Pq+Xit6Xq8P+P9un5UvN8eXbZes9VvT7q736u66w0T/bN9f+mbeYff9Yf9D0x7P6w/5w0w6df3u/Xv29v/wOxf9087U/a6GfCffzDpz9qPq9b6rT8Xq9/mB/9G0q6X391696vX9fC71/W6GvjPPe6WvX5779Xq93776vXbe4fW96v3b3s89B/L//A68fHx8fHx8fFxccm7B6A1X0BveQW8A/7S6gX0V9gWUBreA9Bf4Vn7b7D8H93lC+gtv8Cw/S7wNlh+g+g/gX+F6X8L6G/B8X+N8f6H7nId8Dby/g3Q34Hh+f8a/wV+2mQ8M4P3D/gBof6pSfqVOfSfsPxfY9R/Yf09+H/qD883TfrxXfRfev09bI+T/gv8S/0fGvA/BwYGBgYGBgYGBsYzfgD2E0BfS1014gAAAABJRU5ErkJggg==" alt="Entrepôt intérieur TradcoFrance" class="slide-img">
+                    <!-- TA VRAIE PHOTO DE L'INTÉRIEUR DE L'ENTREPÔT -->
+                    <img src="https://i.ibb.co/qLR0pVcZ/entrepot-interieur.png" alt="Entrepôt intérieur TradcoFrance" class="slide-img">
                 </div>
             </div>
         </div>
@@ -367,24 +358,21 @@
             <p>Ce stage chez TradcoFrance a eu un impact direct sur ma réflexion pour mon parcours futur[cite: 1] :</p>
             
             <ul style="margin-top: 20px;">
-                <li><strong>Validation de mes compétences :</strong> J'ai remarqué que le sens de l'organisation et la réactivité sont essentiels[cite: 1]. Ce sont des qualités que je souhaite développer au lycée.</li>
+                <li><strong>Validation de mes compétences :</strong> J'ai remarqué que le sens de l'organisation et la réactivité sont essentiels[cite: 1].</li>
                 <li><strong>Intérêt pour la gestion et le commerce :</strong> Voir la gestion des flux, les relations avec les marques (Walima, Épice d'Or) et la négociation avec les clients m'a donné envie de m'orienter vers des études de commerce ou de gestion de projets[cite: 1].</li>
-                <li><strong>Prochaine étape :</strong> Pour mon orientation post-3ème, j'envisage de me diriger vers une Seconde Générale et Technologique avec l'objectif de viser plus tard des spécialités ou des formations axées sur le management ou l'économie.</li>
+                <li><strong>Prochaine étape :</strong> Pour mon orientation post-3ème, j'envisage de me diriger vers une Seconde Générale et Technologique avec l'objectif de viser plus tard des formations axées sur le management ou l'économie.</li>
             </ul>
         </div>
 
     </div>
 
-    <!-- BARRE LATÉRALE (CHRONO + NAVIGATION) -->
     <div class="sidebar">
-        <!-- Module Chrono -->
         <div class="timer-box">
             <h4 style="margin-bottom: 10px; font-size: 0.9rem; letter-spacing: 1px; color: #aaa;">TEMPS RESTANT</h4>
             <div class="timer-display" id="timer">05:00</div>
             <button class="timer-btn" id="timerBtn" onclick="toggleTimer()">LANCER</button>
         </div>
 
-        <!-- Module Navigation -->
         <div>
             <div class="progress-indicator" id="progress">Diapo 1 / 8</div>
             <div class="nav-buttons">
@@ -395,7 +383,6 @@
         </div>
     </div>
 
-    <!-- LOGIQUE JAVASCRIPT -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
