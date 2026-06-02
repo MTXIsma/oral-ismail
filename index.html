@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation Oral de Brevet - Ismail FASSIH</title>
+    <style>
+        :root {
+            --primary-color: #d11919; /* Rouge TradcoFrance */
+            --dark-color: #2c3e50;
+            --light-color: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: var(--dark-color);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Zone de présentation principale */
+        .presentation-container {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            flex-direction: column;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        /* Barre latérale Chrono et Navigation */
+        .sidebar {
+            width: 280px;
+            background: #222;
+            border-left: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 20px;
+            color: white;
+        }
+
+        /* Style du Chrono */
+        .timer-box {
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid var(--primary-color);
+        }
+
+        .timer-display {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: monospace;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .timer-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .timer-btn:hover {
+            background: #b01515;
+        }
+
+        /* Boutons de navigation */
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            padding: 12px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background: #555;
+        }
+
+        .progress-indicator {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Styles du contenu des Diapos */
+        h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--dark-color);
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Titre de la page d'accueil */
+        .title-slide {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-slide h1 {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .title-slide h2 {
+            border: none;
+            color: var(--dark-color);
+            font-size: 1.8rem;
+        }
+
+        .badge {
+            background: var(--dark-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ZONE DES DIAPOSITIVES -->
+    <div class="presentation-container">
+
+        <!-- Diapo 1: Accueil -->
+        <div class="slide active title-slide">
+            <h1>Oral de Soutenance du Stage</h1>
+            <h2>Mon stage chez TradcoFrance</h2>
+            <p style="margin-top: 30px; font-weight: bold;">Ismail FASSIH — 3ème Verte</p>
+            <p style="color: #777;">Année scolaire 2025 / 2026</p>
+            <div class="badge">Entreprise : Importation & Distribution Agroalimentaire</div>
+        </div>
+
+        <!-- Diapo 2: Introduction -->
+        <div class="slide">
+            <h2>Introduction & Démarches</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Pourquoi ce stage ?</h3>
+                    <p>Je voulais absolument découvrir le fonctionnement d'une entreprise de taille importante et voir l'envers du décor du monde professionnel avant de choisir mon orientation.</p>
+                    
+                    <h3>Mes démarches</h3>
+                    <p>J'ai effectué plusieurs recherches et démarches de mon côté. C'est l'entreprise TradcoFrance qui a accepté de m'accueillir pour cette semaine d'observation.</p>
+                </div>
+                <div>
+                    <div class="highlight-box">
+                        <strong>Mon état d'esprit avant le stage :</strong><br>
+                        J'étais très enthousiaste et curieux à l'idée d'apprendre de nouvelles choses et de comprendre comment s'organise le travail au quotidien.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapo 3: Présentation de l'entreprise -->
+        <div class="slide">
+            <h2>Qu'est-ce que TradcoFrance ?</h2>
+            <p>Fondée en 2002, TradcoFrance est aujourd'hui l'un des leaders sur le marché du thé et des produits alimentaires ethniques (orientaux) en France.</p>
+            
+            <div class="grid-2" style="margin-top: 20px;">
+                <div>
+                    <h3>Produits importés et distribués :</h3>
+                    <ul>
+                        <li>Thé, épices et olives</li>
+                        <li>Riz, fruits et légumes secs</li>
+                        <li>Conserves diverses</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Leurs propres marques :</h3>
+                    <p>L'entreprise se distingue en commercialisant ses propres marques reconnues : <strong>Walima, Épice d’Or, Tassourt, La Brick d’Or, Le Grand Pêcheur</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapo 4: Fiche d'identité de l'entreprise -->
+        <div class="slide">
+            <h2>L'organisation et les chiffres clés</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Données clés de l'entreprise :</h3>
+                    <ul>
+                        <li><strong>Adresse :</strong> 283 Chaussée Jules César, 95250 Beauchamp</li>
+                        <li><strong>Effectif :</strong> Plus de 35 employés et 15 collaborateurs indépendants</li>
+                        <li><strong>Partenaires :</strong> Travaille avec plus de 80 entreprises partenaires</li>
+                        <li><strong>Clients :</strong> Commerces de proximité, grossistes et grandes surfaces (Carrefour, Leclerc, Intermarché)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Les différents services :</h3>
+                    <ul>
+                        <li><strong>Service Logistique :</strong> Réception, contrôle et stockage</li>
+                        <li><strong>Service Commercial :</strong> Commandes et relation client</li>
+                        <li><strong>Service Administratif :</strong> Comptabilité et achats</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapo 5: Zoom sur un métier -->
+        <div class="slide">
+            <h2>Métier observé : Responsable Transport & Logistique</h2>
+            <p>J'ai choisi de me focaliser sur ce métier car c'est le cœur de l'activité de transit de TradcoFrance.</p>
+            
+            <div class="grid-2" style="margin-top: 15px;">
+                <div>
+                    <h3>Rôle dans l'entreprise :</h3>
+                    <ul>
+                        <li>Coordonner les équipes dans l'entrepôt</li>
+                        <li>Gérer le flux des marchandises de l'import à la livraison</li>
+                        <li>Garantir les délais et la satisfaction des clients</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Conditions de travail :</h3>
+                    <ul>
+                        <li>Rythme de travail soutenu lié aux plannings de livraison</li>
+                        <li>Utilisation constante d'outils informatiques de suivi</li>
+                        <li>Nécessite une excellente communication avec tous les services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapo 6: Mon journal de bord -->
+        <div class="slide">
+            <h2>Mon quotidien durant le stage</h2>
+            <p>Chaque jour, je me rendais à l'entreprise en voiture (environ 45 minutes de trajet).</p>
+            
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h3>Les tâches observées et réalisées :</h3>
+                <ul>
+                    <li>Découverte de la zone de stockage (organisation des palettes, sécurité).</li>
+                    <li>Observation de la réception des conteneurs de produits importés.</li>
+                    <li>Suivi du processus de préparation des commandes pour les supermarchés.</li>
+                    <li>Compréhension de la chaîne documentaire (bons de commande, bordereaux de livraison).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Diapo 7: Bilan du stage -->
+        <div class="slide">
+            <h2>Conclusion et bilan personnel</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Ce que ce stage m'a apporté :</h3>
+                    <ul>
+                        <li>Une vision concrète et réelle du monde du travail.</li>
+                        <li>La découverte des exigences d'une entreprise (ponctualité, rigueur, esprit d'équipe).</li>
+                        <li>La compréhension des circuits de distribution de ce qu'on trouve dans nos assiettes.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="highlight-box" style="background-color: #eef9ff; border-left-color: var(--dark-color);">
+                        <strong>Mon avis général :</strong><br>
+                        Ce stage a été une expérience très positive qui a confirmé mon envie d'évoluer plus tard dans un secteur dynamique et organisé.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapo 8: Perspectives d'avenir (Le slide qui fait gagner des points) -->
+        <div class="slide">
+            <h2>Mes perspectives d'avenir & Orientation</h2>
+            <p>Ce stage chez TradcoFrance a eu un impact direct sur ma réflexion pour mon parcours futur :</p>
+            
+            <ul style="margin-top: 20px;">
+                <li><strong>Validation de mes compétences :</strong> J'ai remarqué que le sens de l'organisation et la réactivité sont essentiels. Ce sont des qualités que je souhaite développer au lycée.</li>
+                <li><strong>Intérêt pour la gestion et le commerce :</strong> Voir la gestion des flux, les relations avec les marques (Walima, Épice d'Or) et la négociation avec les clients m'a donné envie de m'orienter vers des études de commerce ou de gestion de projets.</li>
+                <li><strong>Prochaine étape :</strong> Pour mon orientation post-3ème, j'envisage de me diriger vers une Seconde Générale et Technologique avec l'objectif de viser plus tard des spécialités ou des formations axées sur le management ou l'économie.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- BARRE LATÉRALE (CHRONO + NAVIGATION) -->
+    <div class="sidebar">
+        <!-- Module Chrono -->
+        <div class="timer-box">
+            <h4 style="margin-bottom: 10px; font-size: 0.9rem; letter-spacing: 1px; color: #aaa;">TEMPS RESTANT</h4>
+            <div class="timer-display" id="timer">05:00</div>
+            <button class="timer-btn" id="timerBtn" onclick="toggleTimer()">LANCER</button>
+        </div>
+
+        <!-- Module Navigation -->
+        <div>
+            <div class="progress-indicator" id="progress">Diapo 1 / 8</div>
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="prevSlide()">← Précédent</button>
+                <button class="nav-btn" onclick="nextSlide()">Suivant →</button>
+            </div>
+            <p style="font-size: 0.75rem; text-align: center; color: #555; margin-top: 15px;">Utilise aussi les flèches du clavier</p>
+        </div>
+    </div>
+
+    <!-- LOGIQUE JAVASCRIPT (SANS FRAMEWORK POUR QUE ÇA FASSE "FAIT MAISON") -->
+    <script>
+        // Gestion des Diapos
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressIndicator = document.getElementById('progress');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            slides[currentSlide].classList.add('active');
+            progressIndicator.innerText = `Diapo ${currentSlide + 1} / ${slides.length}`;
+        }
+
+        function nextSlide() { showSlide(currentSlide + 1); }
+        function prevSlide() { showSlide(currentSlide - 1); }
+
+        // Contrôle au clavier
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Gestion du Chrono (5 minutes)
+        let timeLeft = 300; // 5 mins en secondes
+        let timerInterval = null;
+        const timerDisplay = document.getElementById('timer');
+        const timerBtn = document.getElementById('timerBtn');
+
+        function updateTimerDisplay() {
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            timerDisplay.innerText = 
+                (minutes < 10 ? "0" : "") + minutes + ":" + 
+                (seconds < 10 ? "0" : "") + seconds;
+        }
+
+        function toggleTimer() {
+            if (timerInterval) {
+                // Pause
+                clearInterval(timerInterval);
+                timerInterval = null;
+                timerBtn.innerText = "REPRENDRE";
+                timerBtn.style.background = "#2c3e50";
+            } else {
+                // Démarrage
+                timerBtn.innerText = "PAUSE";
+                timerBtn.style.background = "#d11919";
+                timerInterval = setInterval(() => {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        updateTimerDisplay();
+                        if (timeLeft <= 30) {
+                            timerDisplay.style.color = "#ff3333"; // Alerte rouge s'il reste 30s
+                        }
+                    } else {
+                        clearInterval(timerInterval);
+                        timerDisplay.innerText = "00:00";
+                        timerBtn.innerText = "TERMINÉ";
+                        timerBtn.disabled = true;
+                    }
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>
